@@ -1,0 +1,14 @@
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number}
+ */
+var search = function(nums, target) {
+    var returnValue = -1; 
+    for(var i = 0; i < nums.length; i++){
+        if(target === nums[i]) {
+            returnValue = i; 
+        }    
+    }
+    return returnValue; 
+};
